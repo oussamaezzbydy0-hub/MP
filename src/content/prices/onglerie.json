@@ -1,0 +1,41 @@
+{
+  "sections": [
+    {
+      "heading": "Mains",
+      "items": [
+        { "label": "Manucure classic",              "price": "70 dhs",  "from": false },
+        { "label": "Manucure + vernis permanent",   "price": "170 dhs", "from": false },
+        { "label": "Pose vernis permanent",         "price": "100 dhs", "from": false },
+        { "label": "Pose vernis permanent blab",    "price": "150 dhs", "from": true  }
+      ]
+    },
+    {
+      "heading": "Pieds",
+      "items": [
+        { "label": "Pédicure classic",              "price": "100 dhs", "from": false },
+        { "label": "Pédicure + vernis permanent",   "price": "200 dhs", "from": false },
+        { "label": "Pose vernis permanent",         "price": "100 dhs", "from": false },
+        { "label": "Pose vernis permanent blab",    "price": "150 dhs", "from": true  }
+      ]
+    },
+    {
+      "heading": "Prothésie Ongulaire",
+      "items": [
+        { "label": "Pose faux ongle + vernis classique",  "price": "80 dhs",  "from": false },
+        { "label": "Pose faux ongle + vernis permanent",  "price": "180 dhs", "from": false },
+        { "label": "Gel avec vernis permanent",           "price": "300 dhs", "from": true  },
+        { "label": "Changement de couleur",               "price": "150 dhs", "from": false }
+      ]
+    },
+    {
+      "heading": "Extra",
+      "items": [
+        { "label": "Pose vernis classique",      "price": "30 dhs", "from": false },
+        { "label": "Pose french classique",      "price": "40 dhs", "from": false },
+        { "label": "Dépose vernis permanent",    "price": "40 dhs", "from": false },
+        { "label": "Dépose gel",                 "price": "80 dhs", "from": false },
+        { "label": "Ongle cassé orteil (unité)", "price": "20 dhs", "from": false }
+      ]
+    }
+  ]
+}

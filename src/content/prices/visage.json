@@ -1,0 +1,16 @@
+{
+  "sections": [
+    {
+      "heading": "",
+      "items": [
+        { "label": "Modelage",          "price": "80 dhs",  "from": false },
+        { "label": "Mini soin",         "price": "150 dhs", "from": false },
+        { "label": "Soin touche éclat", "price": "250 dhs", "from": false },
+        { "label": "Soin purifiant",    "price": "300 dhs", "from": false },
+        { "label": "Soin hydrafacial",  "price": "500 dhs", "from": false },
+        { "label": "Microneedling",     "price": "500 dhs", "from": false },
+        { "label": "Carbon peel",       "price": "500 dhs", "from": false }
+      ]
+    }
+  ]
+}

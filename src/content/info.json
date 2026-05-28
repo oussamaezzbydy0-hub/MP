@@ -1,0 +1,19 @@
+{
+  "phone": "+212 662-519668",
+  "whatsapp": "212662519668",
+  "email": "Salon.missprestige@gmail.com",
+  "address": [
+    "Rue Mohammed El Qory",
+    "Médina, Essaouira 44000",
+    "Maroc"
+  ],
+  "hours": [
+    { "days": "Lun – Sam", "time": "9h00 – 20h00" },
+    { "days": "Dimanche", "time": "Fermé" }
+  ],
+  "social": {
+    "instagram": "https://www.instagram.com/imanetourit",
+    "instagram_tanguift": "https://www.instagram.com/tanguif_imanetourit?igsh=azB6azAxcTFkbXg0",
+    "facebook": "https://www.facebook.com/ByImaneTourit/"
+  }
+}

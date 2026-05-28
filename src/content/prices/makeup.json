@@ -1,0 +1,21 @@
+{
+  "sections": [
+    {
+      "heading": "Makeup Permanent",
+      "items": [
+        { "label": "Microblading sourcils", "price": "1 500 dhs", "from": false },
+        { "label": "Glassage",              "price": "1 000 dhs", "from": false },
+        { "label": "Brow lift",             "price": "200 dhs",   "from": false }
+      ]
+    },
+    {
+      "heading": "Makeup",
+      "items": [
+        { "label": "Makeup simple invité",       "price": "200 dhs",   "from": true },
+        { "label": "Makeup spécial soirée",      "price": "300 dhs",   "from": true },
+        { "label": "Makeup spécial marié",       "price": "1 500 dhs", "from": true },
+        { "label": "Makeup spécial fiançailles", "price": "500 dhs",   "from": true }
+      ]
+    }
+  ]
+}

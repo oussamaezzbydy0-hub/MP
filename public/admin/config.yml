@@ -1,0 +1,213 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: fr
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+
+  # ══════════════════════════════════════════════════
+  # TARIFS — un fichier JSON par catégorie
+  # ══════════════════════════════════════════════════
+  - name: tarifs
+    label: "Tarifs & Prix"
+    files:
+
+      - name: coiffure
+        label: "Coiffure / Coupe"
+        file: "src/content/prices/coiffure.json"
+        format: json
+        fields:
+          - label: "Sections"
+            name: sections
+            widget: list
+            label_singular: "Section"
+            fields:
+              - label: "Titre de section (optionnel)"
+                name: heading
+                widget: string
+                required: false
+                hint: "Laisser vide si pas de sous-catégorie"
+              - label: "Prestations"
+                name: items
+                widget: list
+                label_singular: "Prestation"
+                fields:
+                  - { label: "Nom du service", name: label, widget: string }
+                  - { label: "Prix", name: price, widget: string, hint: "Ex : 100 dhs" }
+                  - { label: "À partir de", name: from, widget: boolean, default: false }
+
+      - name: visage
+        label: "Soin Visage"
+        file: "src/content/prices/visage.json"
+        format: json
+        fields:
+          - label: "Sections"
+            name: sections
+            widget: list
+            label_singular: "Section"
+            fields:
+              - { label: "Titre de section (optionnel)", name: heading, widget: string, required: false }
+              - label: "Prestations"
+                name: items
+                widget: list
+                label_singular: "Prestation"
+                fields:
+                  - { label: "Nom du service", name: label, widget: string }
+                  - { label: "Prix", name: price, widget: string, hint: "Ex : 100 dhs" }
+                  - { label: "À partir de", name: from, widget: boolean, default: false }
+
+      - name: cils
+        label: "Les Cils"
+        file: "src/content/prices/cils.json"
+        format: json
+        fields:
+          - label: "Sections"
+            name: sections
+            widget: list
+            label_singular: "Section"
+            fields:
+              - { label: "Titre de section (optionnel)", name: heading, widget: string, required: false }
+              - label: "Prestations"
+                name: items
+                widget: list
+                label_singular: "Prestation"
+                fields:
+                  - { label: "Nom du service", name: label, widget: string }
+                  - { label: "Prix", name: price, widget: string, hint: "Ex : 100 dhs" }
+                  - { label: "À partir de", name: from, widget: boolean, default: false }
+
+      - name: epilation
+        label: "Épilation"
+        file: "src/content/prices/epilation.json"
+        format: json
+        fields:
+          - label: "Sections"
+            name: sections
+            widget: list
+            label_singular: "Section"
+            fields:
+              - { label: "Titre de section (optionnel)", name: heading, widget: string, required: false }
+              - label: "Prestations"
+                name: items
+                widget: list
+                label_singular: "Prestation"
+                fields:
+                  - { label: "Nom du service", name: label, widget: string }
+                  - { label: "Prix", name: price, widget: string, hint: "Ex : 100 dhs" }
+                  - { label: "À partir de", name: from, widget: boolean, default: false }
+
+      - name: onglerie
+        label: "Onglerie"
+        file: "src/content/prices/onglerie.json"
+        format: json
+        fields:
+          - label: "Sections"
+            name: sections
+            widget: list
+            label_singular: "Section"
+            fields:
+              - { label: "Titre de section", name: heading, widget: string, required: false, hint: "Ex : Mains, Pieds, Extra" }
+              - label: "Prestations"
+                name: items
+                widget: list
+                label_singular: "Prestation"
+                fields:
+                  - { label: "Nom du service", name: label, widget: string }
+                  - { label: "Prix", name: price, widget: string, hint: "Ex : 100 dhs" }
+                  - { label: "À partir de", name: from, widget: boolean, default: false }
+
+      - name: massages
+        label: "Massages"
+        file: "src/content/prices/massages.json"
+        format: json
+        fields:
+          - label: "Sections"
+            name: sections
+            widget: list
+            label_singular: "Section"
+            fields:
+              - { label: "Titre de section (optionnel)", name: heading, widget: string, required: false }
+              - label: "Prestations"
+                name: items
+                widget: list
+                label_singular: "Prestation"
+                fields:
+                  - { label: "Nom du service", name: label, widget: string }
+                  - { label: "Prix", name: price, widget: string, hint: "Ex : 100 dhs" }
+                  - { label: "À partir de", name: from, widget: boolean, default: false }
+
+      - name: makeup
+        label: "Makeup"
+        file: "src/content/prices/makeup.json"
+        format: json
+        fields:
+          - label: "Sections"
+            name: sections
+            widget: list
+            label_singular: "Section"
+            fields:
+              - { label: "Titre de section", name: heading, widget: string, required: false, hint: "Ex : Makeup Permanent, Makeup" }
+              - label: "Prestations"
+                name: items
+                widget: list
+                label_singular: "Prestation"
+                fields:
+                  - { label: "Nom du service", name: label, widget: string }
+                  - { label: "Prix", name: price, widget: string, hint: "Ex : 100 dhs" }
+                  - { label: "À partir de", name: from, widget: boolean, default: false }
+
+  # ══════════════════════════════════════════════════
+  # INFORMATIONS SALON
+  # ══════════════════════════════════════════════════
+  - name: informations
+    label: "Informations Salon"
+    files:
+
+      - name: contact
+        label: "Contact & Horaires"
+        file: "src/content/info.json"
+        format: json
+        fields:
+          - label: "Téléphone (affiché)"
+            name: phone
+            widget: string
+            hint: "Format affiché sur le site. Ex : +212 662-519668"
+
+          - label: "Numéro WhatsApp"
+            name: whatsapp
+            widget: string
+            hint: "Chiffres uniquement, sans + ni espaces. Ex : 212662519668"
+
+          - label: "Email"
+            name: email
+            widget: string
+
+          - label: "Adresse"
+            name: address
+            widget: list
+            label_singular: "Ligne"
+            hint: "Une ligne par entrée (rue, ville, pays)"
+            field:
+              label: Ligne
+              name: line
+              widget: string
+
+          - label: "Horaires d'ouverture"
+            name: hours
+            widget: list
+            label_singular: "Plage horaire"
+            fields:
+              - { label: "Jours", name: days, widget: string, hint: "Ex : Lun – Sam" }
+              - { label: "Heures", name: time, widget: string, hint: "Ex : 9h00 – 20h00" }
+
+          - label: "Réseaux sociaux"
+            name: social
+            widget: object
+            fields:
+              - { label: "Instagram (Miss Prestige)", name: instagram, widget: string }
+              - { label: "Instagram (Tanguift)", name: instagram_tanguift, widget: string }
+              - { label: "Facebook", name: facebook, widget: string }

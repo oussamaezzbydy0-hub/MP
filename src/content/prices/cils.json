@@ -1,0 +1,12 @@
+{
+  "sections": [
+    {
+      "heading": "",
+      "items": [
+        { "label": "Volume naturel", "price": "250 dhs", "from": false },
+        { "label": "Volume intense", "price": "300 dhs", "from": false },
+        { "label": "Volume hybride", "price": "350 dhs", "from": false }
+      ]
+    }
+  ]
+}

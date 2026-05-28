@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir)",
+      "Bash(node -e \"const fs=require\\('fs'\\);const lines=fs.readFileSync\\('src/components/Tangaft.tsx','utf8'\\).split\\('\\\\n'\\);lines.slice\\(183,251\\).forEach\\(\\(l,i\\)=>console.log\\(i+184,JSON.stringify\\(l\\)\\)\\)\")",
+      "Bash(node -e ' *)",
+      "Bash(find public/admin src/content src/lib/siteConfig.ts netlify.toml -type f)",
+      "Bash(dir /s /b public\\\\admin src\\\\content src\\\\lib\\\\siteConfig.ts netlify.toml)"
+    ]
+  }
+}

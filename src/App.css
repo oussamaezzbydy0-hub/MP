@@ -1,0 +1,8 @@
+/* Miss Prestige Salon — styles handled via Tailwind CSS */
+
+/* Arabic: replace all Western fonts with Cairo */
+html[lang="ar"] .font-playfair,
+html[lang="ar"] .font-raleway,
+html[lang="ar"] .font-pinyon {
+  font-family: 'Cairo', sans-serif;
+}

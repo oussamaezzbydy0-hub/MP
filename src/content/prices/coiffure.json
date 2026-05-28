@@ -1,0 +1,21 @@
+{
+  "sections": [
+    {
+      "heading": "",
+      "items": [
+        { "label": "Touching",                              "price": "25 dhs",    "from": true  },
+        { "label": "Brushing",                              "price": "40 dhs",    "from": true  },
+        { "label": "Soin vapeur",                           "price": "100 dhs",   "from": true  },
+        { "label": "Babyliss",                              "price": "100 dhs",   "from": true  },
+        { "label": "Coupe",                                 "price": "50 dhs",    "from": true  },
+        { "label": "Soin cheveux aux huiles essentielles",  "price": "80 dhs",    "from": false },
+        { "label": "Coloration racine",                     "price": "100 dhs",   "from": true  },
+        { "label": "Coloration normale",                    "price": "250 dhs",   "from": false },
+        { "label": "Balayage",                              "price": "400 dhs",   "from": false },
+        { "label": "Les mèches",                            "price": "200 dhs",   "from": true  },
+        { "label": "Les mèches + coloration",               "price": "300 dhs",   "from": true  },
+        { "label": "Protéine",                              "price": "1 000 dhs", "from": true  }
+      ]
+    }
+  ]
+}

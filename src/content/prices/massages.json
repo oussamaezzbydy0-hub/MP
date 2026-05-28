@@ -1,0 +1,13 @@
+{
+  "sections": [
+    {
+      "heading": "",
+      "items": [
+        { "label": "Massage relaxant (60 min)",               "price": "400 dhs", "from": false },
+        { "label": "Massage spécial dos (20 min)",            "price": "250 dhs", "from": false },
+        { "label": "Massage jambes lourdes (30 min)",         "price": "300 dhs", "from": false },
+        { "label": "Massage cuir chevelu et nuque (20 min)",  "price": "250 dhs", "from": false }
+      ]
+    }
+  ]
+}

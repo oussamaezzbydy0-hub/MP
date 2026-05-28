@@ -1,0 +1,24 @@
+{
+  "sections": [
+    {
+      "heading": "",
+      "items": [
+        { "label": "Duvet",                    "price": "10 dhs",  "from": false },
+        { "label": "Menton",                   "price": "25 dhs",  "from": false },
+        { "label": "Sourcils",                 "price": "20 dhs",  "from": false },
+        { "label": "Visage complet",           "price": "60 dhs",  "from": false },
+        { "label": "Visage complet avec fils", "price": "80 dhs",  "from": false },
+        { "label": "Demi-jambe",               "price": "50 dhs",  "from": false },
+        { "label": "Jambe complète",           "price": "100 dhs", "from": false },
+        { "label": "Aisselles",                "price": "25 dhs",  "from": false },
+        { "label": "Bords de maillot",         "price": "50 dhs",  "from": false },
+        { "label": "Maillot intégral",         "price": "100 dhs", "from": false },
+        { "label": "Avant-bras",               "price": "40 dhs",  "from": false },
+        { "label": "Bras complet",             "price": "70 dhs",  "from": false },
+        { "label": "Ventre",                   "price": "40 dhs",  "from": false },
+        { "label": "Fessier",                  "price": "45 dhs",  "from": false },
+        { "label": "Orteils",                  "price": "20 dhs",  "from": false }
+      ]
+    }
+  ]
+}

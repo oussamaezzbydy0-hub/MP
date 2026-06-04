@@ -211,3 +211,73 @@ collections:
               - { label: "Instagram (Miss Prestige)", name: instagram, widget: string }
               - { label: "Instagram (Tanguift)", name: instagram_tanguift, widget: string }
               - { label: "Facebook", name: facebook, widget: string }
+
+  # ══════════════════════════════════════════════════
+  # SECTION HERO
+  # ══════════════════════════════════════════════════
+  - name: hero
+    label: "Section Hero"
+    files:
+
+      - name: hero
+        label: "Textes Hero (français)"
+        file: "src/content/hero.json"
+        format: json
+        fields:
+          - label: "Surtitle (eyebrow)"
+            name: eyebrow
+            widget: string
+            hint: "Texte fin au-dessus du titre. Ex : Essaouira, Maroc"
+          - label: "Titre — ligne 1"
+            name: title1
+            widget: string
+            hint: "Première partie du titre principal. Ex : L'Art de la"
+          - label: "Titre — ligne 2 (doré)"
+            name: title2
+            widget: string
+            hint: "Deuxième partie affichée en doré. Ex : Beauté Féminine"
+          - label: "Sous-titre"
+            name: subtitle
+            widget: text
+            hint: "Phrase descriptive sous le titre principal"
+
+  # ══════════════════════════════════════════════════
+  # GALERIE — TRANSFORMATIONS AVANT / APRÈS
+  # ══════════════════════════════════════════════════
+  - name: galerie
+    label: "Galerie"
+    files:
+
+      - name: transformations
+        label: "Transformations Avant / Après"
+        file: "src/content/gallery.json"
+        format: json
+        fields:
+          - label: "Transformations"
+            name: transformations
+            widget: list
+            label_singular: "Transformation"
+            fields:
+              - label: "Type d'affichage"
+                name: type
+                widget: select
+                options:
+                  - { label: "Côte-à-côte AVANT / APRÈS", value: "split" }
+                  - { label: "Image unique (avant→après)", value: "full" }
+              - { label: "Nom du service", name: service, widget: string, hint: "Ex : Design Sourcils" }
+              - { label: "Catégorie", name: category, widget: string, hint: "Ex : Coiffure, Beauté, Onglerie" }
+              - label: "Image principale (type full)"
+                name: image
+                widget: image
+                required: false
+                hint: "Uniquement pour le type 'Image unique'"
+              - label: "Image AVANT (type split)"
+                name: avant
+                widget: image
+                required: false
+                hint: "Uniquement pour le type 'Côte-à-côte'"
+              - label: "Image APRÈS (type split)"
+                name: apres
+                widget: image
+                required: false
+                hint: "Uniquement pour le type 'Côte-à-côte'"

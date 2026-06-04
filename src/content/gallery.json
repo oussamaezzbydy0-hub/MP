@@ -1,0 +1,30 @@
+{
+  "transformations": [
+    {
+      "type": "split",
+      "service": "Design Sourcils",
+      "category": "Beauté",
+      "avant": "/AVANT.jpeg",
+      "apres": "/APRES.jpeg"
+    },
+    {
+      "type": "full",
+      "service": "Coloration",
+      "category": "Coiffure",
+      "image": "/cloration avant apres.jpg.jpeg"
+    },
+    {
+      "type": "full",
+      "service": "Protéine",
+      "category": "Soin Capillaire",
+      "image": "/PROTEINE AVANT ET APRES.jpg.jpeg"
+    },
+    {
+      "type": "split",
+      "service": "Ongles Gel",
+      "category": "Onglerie",
+      "avant": "/befor12.jpg.jpeg",
+      "apres": "/after12.jpg.jpeg"
+    }
+  ]
+}

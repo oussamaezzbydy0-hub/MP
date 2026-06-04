@@ -2,39 +2,13 @@ import { motion } from 'framer-motion'
 import { fadeUp, lineGrow, VIEWPORT } from '../lib/motionVariants'
 import { useLang } from '../lib/LanguageContext'
 import { i18n, tr } from '../lib/i18n'
+import galleryData from '../content/gallery.json'
 
 type Transformation =
   | { type: 'split'; service: string; category: string; avant: string; apres: string }
   | { type: 'full';  service: string; category: string; image: string }
 
-const transformations: Transformation[] = [
-  {
-    type: 'split',
-    service: 'Design Sourcils',
-    category: 'Beauté',
-    avant: '/AVANT.jpeg',
-    apres: '/APRES.jpeg',
-  },
-  {
-    type: 'full',
-    service: 'Coloration',
-    category: 'Coiffure',
-    image: '/cloration avant apres.jpg.jpeg',
-  },
-  {
-    type: 'full',
-    service: 'Protéine',
-    category: 'Soin Capillaire',
-    image: '/PROTEINE AVANT ET APRES.jpg.jpeg',
-  },
-  {
-    type: 'split',
-    service: 'Ongles Gel',
-    category: 'Onglerie',
-    avant: '/befor12.jpg.jpeg',
-    apres: '/after12.jpg.jpeg',
-  },
-]
+const transformations = galleryData.transformations as Transformation[]
 
 const ease = [0.22, 1, 0.36, 1] as const
 

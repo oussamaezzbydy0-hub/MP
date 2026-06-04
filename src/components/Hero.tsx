@@ -3,6 +3,7 @@ import { motion, useMotionValue, useTransform, animate, useInView } from 'framer
 import { useLang } from '../lib/LanguageContext'
 import { i18n, tr } from '../lib/i18n'
 import { WA } from '../lib/siteConfig'
+import heroContent from '../content/hero.json'
 
 function Counter({ target, suffix }: { target: number; suffix: string }) {
   const ref = useRef<HTMLSpanElement>(null)
@@ -20,6 +21,11 @@ function Counter({ target, suffix }: { target: number; suffix: string }) {
 export default function Hero() {
   const { lang } = useLang()
   const ease = [0.22, 1, 0.36, 1] as const
+
+  const heroEyebrow  = lang === 'fr' ? heroContent.eyebrow  : tr(i18n.hero.eyebrow,  lang)
+  const heroTitle1   = lang === 'fr' ? heroContent.title1   : tr(i18n.hero.title1,   lang)
+  const heroTitle2   = lang === 'fr' ? heroContent.title2   : tr(i18n.hero.title2,   lang)
+  const heroSubtitle = lang === 'fr' ? heroContent.subtitle : tr(i18n.hero.subtitle, lang)
 
   const stats = [
     { target: 500, suffix: '+', label: tr(i18n.hero.stat1, lang) },
@@ -67,7 +73,7 @@ export default function Hero() {
           className="font-raleway text-gold-light text-sm tracking-[0.35em] uppercase mb-6"
         >
           <motion.span animate={{ opacity: [0.5, 1, 0.5] }} transition={{ duration: 2.5, repeat: Infinity, delay: 2 }}>✦</motion.span>
-          {' '}{tr(i18n.hero.eyebrow, lang)}{' '}
+          {' '}{heroEyebrow}{' '}
           <motion.span animate={{ opacity: [0.5, 1, 0.5] }} transition={{ duration: 2.5, repeat: Infinity, delay: 2.4 }}>✦</motion.span>
         </motion.p>
 
@@ -78,7 +84,7 @@ export default function Hero() {
             transition={{ delay: 0.85, duration: 0.95, ease }}
             className="inline-block"
           >
-            {tr(i18n.hero.title1, lang)}{' '}
+            {heroTitle1}{' '}
           </motion.span>
           <motion.em
             initial={{ opacity: 0, x: 60 }}
@@ -87,7 +93,7 @@ export default function Hero() {
             className="text-gold not-italic inline-block"
             style={{ display: 'inline-block' }}
           >
-            {tr(i18n.hero.title2, lang)}
+            {heroTitle2}
           </motion.em>
         </h1>
 
@@ -99,7 +105,7 @@ export default function Hero() {
           style={{ textShadow: '0 2px 12px rgba(0,0,0,0.6)' }}
         >
           {/* Full subtitle — desktop only */}
-          <span className="hidden md:inline">{tr(i18n.hero.subtitle, lang)}</span>
+          <span className="hidden md:inline">{heroSubtitle}</span>
           {/* Short subtitle — mobile only */}
           <span className="md:hidden">
             {tr({

@@ -37,10 +37,10 @@ const FAQS: { q: T4; a: T4 }[] = [
       es: '¿Cómo reservo una cita?',
     },
     a: {
-      fr: "La méthode la plus simple est de nous envoyer un message WhatsApp au +212 662-519668. Nous confirmons votre créneau en moins de 15 minutes. Vous pouvez aussi nous appeler directement.",
-      en: "The easiest way is to send us a WhatsApp message at +212 662-519668. We confirm your slot in less than 15 minutes. You can also call us directly.",
-      ar: "أسهل طريقة هي إرسال رسالة واتساب على +212 662-519668. نؤكد موعدك في أقل من 15 دقيقة. يمكنك أيضاً الاتصال بنا مباشرة.",
-      es: "La forma más fácil es enviarnos un WhatsApp al +212 662-519668. Confirmamos tu cita en menos de 15 minutos. También puedes llamarnos directamente.",
+      fr: "La méthode la plus simple est de nous envoyer un message WhatsApp au +212 662-519668. Vous pouvez aussi nous appeler directement.",
+      en: "The easiest way is to send us a WhatsApp message at +212 662-519668. You can also call us directly.",
+      ar: "أسهل طريقة هي إرسال رسالة واتساب على +212 662-519668. يمكنك أيضاً الاتصال بنا مباشرة.",
+      es: "La forma más fácil es enviarnos un WhatsApp al +212 662-519668. También puedes llamarnos directamente.",
     },
   },
   {
@@ -73,20 +73,6 @@ const FAQS: { q: T4; a: T4 }[] = [
   },
   {
     q: {
-      fr: 'Combien de temps durent les différentes prestations ?',
-      en: 'How long do the different services take?',
-      ar: 'كم من الوقت تستغرق الخدمات المختلفة؟',
-      es: '¿Cuánto tiempo duran los diferentes servicios?',
-    },
-    a: {
-      fr: "La durée varie selon la prestation : Brushing (30–45 min), Coloration (2–3h), Extensions de cils (1h30–2h), Manucure (45 min–1h), Soins visage (1–1h30). La durée exacte vous sera communiquée lors de votre réservation.",
-      en: "Duration varies by service: Blow-dry (30–45 min), Coloring (2–3h), Eyelash extensions (1.5–2h), Manicure (45 min–1h), Facial care (1–1.5h). The exact duration will be communicated at booking.",
-      ar: "تتفاوت المدة حسب الخدمة: التجفيف (30-45 دق)، التلوين (2-3 ساعات)، الرموش (90 دق-ساعتان)، المانيكير (45 دق-ساعة)، العناية بالوجه (ساعة-ساعة ونص). المدة الدقيقة تُعطى عند الحجز.",
-      es: "La duración varía: Brushing (30–45 min), Coloración (2–3h), Extensiones de pestañas (1.5–2h), Manicura (45 min–1h), Cuidado facial (1–1.5h). La duración exacta se comunica al reservar.",
-    },
-  },
-  {
-    q: {
       fr: 'Proposez-vous des formules spéciales mariage ?',
       en: 'Do you offer special bridal packages?',
       ar: 'هل تقدمون باقات خاصة للعرائس؟',
@@ -107,10 +93,10 @@ const FAQS: { q: T4; a: T4 }[] = [
       es: '¿Cuáles son sus horarios de apertura?',
     },
     a: {
-      fr: "Nous sommes ouvertes du lundi au samedi, de 11h00 à 21h00. Le dimanche, nous sommes fermées. Pour des besoins spéciaux (mariages, événements), contactez-nous pour des horaires adaptés.",
-      en: "We are open Monday to Saturday, from 11:00 to 21:00. Sundays we are closed. For special needs (weddings, events), contact us for adapted hours.",
-      ar: "نفتح من الاثنين إلى السبت، من 11:00 إلى 21:00. الأحد مغلق. لمناسبات خاصة، تواصلي معنا لمواعيد مخصصة.",
-      es: "Abrimos de lunes a sábado, de 11:00 a 21:00. Los domingos cerramos. Para necesidades especiales (bodas, eventos), contáctanos para horarios adaptados.",
+      fr: "Nous sommes ouvertes tous les jours, du lundi au dimanche, de 11h00 à 21h00. Pour des besoins spéciaux (mariages, événements), contactez-nous pour des horaires adaptés.",
+      en: "We are open every day, Monday to Sunday, from 11:00 to 21:00. For special needs (weddings, events), contact us for adapted hours.",
+      ar: "نفتح كل يوم من الاثنين إلى الأحد، من 11:00 إلى 21:00. لمناسبات خاصة، تواصلي معنا لمواعيد مخصصة.",
+      es: "Abrimos todos los días, de lunes a domingo, de 11:00 a 21:00. Para necesidades especiales (bodas, eventos), contáctanos para horarios adaptados.",
     },
   },
   {
@@ -135,10 +121,10 @@ const FAQS: { q: T4; a: T4 }[] = [
       es: '¿Cómo llegar al salón desde el centro?',
     },
     a: {
-      fr: "Nous sommes situés Rue Mohammed El Qory, dans la Médina d'Essaouira (44000). Recherchez 'Salon Miss Prestige Essaouira' sur Google Maps pour l'itinéraire. Vous pouvez aussi nous écrire sur WhatsApp et nous vous enverrons notre localisation exacte.",
-      en: "We are located on Rue Mohammed El Qory, in the Medina of Essaouira (44000). Search 'Salon Miss Prestige Essaouira' on Google Maps for directions. You can also message us on WhatsApp and we'll send you our exact location.",
-      ar: "نقع في شارع محمد القوري، في المدينة العتيقة للصويرة (44000). ابحثي عن 'Salon Miss Prestige Essaouira' على خرائط جوجل. يمكنك أيضاً مراسلتنا عبر واتساب وسنرسل لك موقعنا بالضبط.",
-      es: "Estamos en Rue Mohammed El Qory, en la Medina de Essaouira (44000). Busca 'Salon Miss Prestige Essaouira' en Google Maps. También puedes escribirnos por WhatsApp y te enviamos nuestra ubicación exacta.",
+      fr: "Nous sommes situés au 45 Lot Irac Borj 2, Essaouira 44000. Recherchez 'Salon Miss Prestige Essaouira' sur Google Maps pour l'itinéraire. Vous pouvez aussi nous écrire sur WhatsApp et nous vous enverrons notre localisation exacte.",
+      en: "We are located at 45 Lot Irac Borj 2, Essaouira 44000. Search 'Salon Miss Prestige Essaouira' on Google Maps for directions. You can also message us on WhatsApp and we'll send you our exact location.",
+      ar: "نقع في 45 لوت إيراك بورج 2، الصويرة 44000. ابحثي عن 'Salon Miss Prestige Essaouira' على خرائط جوجل. يمكنك أيضاً مراسلتنا عبر واتساب وسنرسل لك موقعنا بالضبط.",
+      es: "Estamos en 45 Lot Irac Borj 2, Essaouira 44000. Busca 'Salon Miss Prestige Essaouira' en Google Maps. También puedes escribirnos por WhatsApp y te enviamos nuestra ubicación exacta.",
     },
   },
 ]

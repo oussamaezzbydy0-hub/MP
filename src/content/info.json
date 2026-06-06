@@ -3,13 +3,12 @@
   "whatsapp": "212662519668",
   "email": "Salon.missprestige@gmail.com",
   "address": [
-    "Rue Mohammed El Qory",
-    "Médina, Essaouira 44000",
+    "45 Lot Irac Borj 2",
+    "Essaouira 44000",
     "Maroc"
   ],
   "hours": [
-    { "days": "Lun – Sam", "time": "9h00 – 20h00" },
-    { "days": "Dimanche", "time": "Fermé" }
+    { "days": "Lun – Dim", "time": "11h00 – 21h00" }
   ],
   "social": {
     "instagram": "https://www.instagram.com/imanetourit",
